@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void btnkotu(View view){
         Toast.makeText(MainActivity.this,"KÖTÜ",Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this,"KÖTÜ2",Toast.LENGTH_LONG).show();
+
     }
     public void btnorta(View view){
         Toast.makeText(MainActivity.this,"ORTA",Toast.LENGTH_LONG).show();
