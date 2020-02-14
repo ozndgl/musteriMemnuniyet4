@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(MainActivity.this,"İYİ",Toast.LENGTH_LONG).show();
     }
 
+    
 
 
 }
