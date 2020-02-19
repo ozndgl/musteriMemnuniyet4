@@ -6,45 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
+    <ImageView
         android:id="@+id/kotu"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="85dp"
-        android:layout_marginBottom="126dp"
-        android:onClick="btnkotu"
-        android:text="KÖTÜ"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/orta"
+        app:layout_constraintEnd_toStartOf="@+id/orta"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/orta"
+        app:srcCompat="@drawable/kotu" />
 
-    <Button
+    <ImageView
         android:id="@+id/orta"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="75dp"
-        android:layout_marginTop="85dp"
-        android:layout_marginEnd="79dp"
-        android:layout_marginBottom="126dp"
-        android:onClick="btnorta"
-        android:text="ORTA"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintBottom_toBottomOf="@+id/iyi"
         app:layout_constraintEnd_toStartOf="@+id/iyi"
         app:layout_constraintStart_toEndOf="@+id/kotu"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/iyi"
+        app:srcCompat="@drawable/orta" />
+
+    <ImageView
+        android:id="@+id/iyi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="79dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/orta"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iyi" />
 
     <Button
-        android:id="@+id/iyi"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="85dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginBottom="126dp"
-        android:onClick="btniyi"
-        android:text="İYİ"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="panel"
+        android:text="KONTROL PANELİ"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@+id/iyi" />
 </androidx.constraintlayout.widget.ConstraintLayout>

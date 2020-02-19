@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gerigit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".panel">
+
+    <TextView
+        android:id="@+id/toplamoytext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="76dp"
+        android:gravity="center"
+        android:text="TOPLAM OY"
+        app:layout_constraintBottom_toTopOf="@+id/toplamoytextyaz"
+        app:layout_constraintEnd_toStartOf="@+id/kotuoytext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/toplamoytextyaz"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginBottom="304dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/toplamkotuyaz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toplamoytext" />
+
+    <TextView
+        android:id="@+id/toplamiyiyaz"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="252dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toplamortayaz"
+        app:layout_constraintTop_toBottomOf="@+id/iyioytext" />
+
+    <TextView
+        android:id="@+id/toplamortayaz"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="304dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/toplamiyiyaz"
+        app:layout_constraintStart_toEndOf="@+id/toplamkotuyaz"
+        app:layout_constraintTop_toBottomOf="@+id/ortaoytext" />
+
+    <TextView
+        android:id="@+id/toplamkotuyaz"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="304dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/toplamortayaz"
+        app:layout_constraintStart_toEndOf="@+id/toplamoytextyaz"
+        app:layout_constraintTop_toBottomOf="@+id/kotuoytext" />
+
+    <TextView
+        android:id="@+id/kotuoytext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="22dp"
+        android:gravity="center"
+        android:text="KOTÜ"
+        app:layout_constraintBottom_toTopOf="@+id/toplamkotuyaz"
+        app:layout_constraintEnd_toStartOf="@+id/ortaoytext"
+        app:layout_constraintStart_toEndOf="@+id/toplamoytext"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/iyioytext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="77dp"
+        android:gravity="center"
+        android:text="İYİ"
+        app:layout_constraintBottom_toTopOf="@+id/toplamiyiyaz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ortaoytext"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ortaoytext"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="21dp"
+        android:gravity="center"
+        android:text="ORTA"
+        app:layout_constraintBottom_toTopOf="@+id/toplamortayaz"
+        app:layout_constraintEnd_toStartOf="@+id/iyioytext"
+        app:layout_constraintStart_toEndOf="@+id/kotuoytext"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="4dp"
+        android:onClick="gerigit"
+        android:text="GERİ GİT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toplamiyiyaz" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
